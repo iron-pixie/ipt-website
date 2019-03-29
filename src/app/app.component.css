@@ -1,0 +1,17 @@
+#content
+{
+    background-color: white; 
+    border-radius: 5px;
+    
+    box-shadow: 1px 4px 12px 1px darkslateblue;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+
+
+    max-width: 760px;
+    height: 1050px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
