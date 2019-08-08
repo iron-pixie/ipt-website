@@ -1,0 +1,43 @@
+<div id="wrapper"></div>
+<button (click)="showit()" id="desktopdropdown" [ngClass]="{
+    'notmenu': makechange,
+    'ismenu': change
+  }"><mat-icon>arrow_forward_ios</mat-icon></button>
+<div id="menucontainer" [ngClass]="{
+    'notmenu': makechange,
+    'ismenu': change
+  }"><div id="menubar" [ngClass]="{
+    'notmenu': makechange,
+    'ismenu': change
+  }"><img src="assets\images\IPlogover4.png" id="menuimage" (click)='ScrollToElement("totop")'>
+    <ul>
+        <li><button class="menubutton" (click)='ScrollToElement("tomission")'>Our Mission</button></li>
+        <li><button class="menubutton" (click)='ScrollToElement("toteam")'>Our Team</button></li>
+        <li><button class="menubutton" (click)='ScrollToElement("tocontact")'>Contact Us</button></li>
+    </ul>
+</div></div>
+
+<div id="totop"></div>
+<div class="basicbox" id="animateboxone"><img id="headimage" src="assets\images\IPlogo256ver7.png"></div>
+<div class="basicbox" id="animateboxtwo"><div id="textcontentone">Iron Pixie Technologies is a technology consulting company devoted to fulfilling client needs and providing expertise in a wide array of fields</div></div>
+<div class="basicbox" id="animateboxthree"><div id="textcontentone">We primarily produce software solutions to business challenges. You can contact us at stephen.harb@ironpixietechnologies.com</div></div>
+<div id="tomission"><div class="basicbox" id="animateboxastitle"><div id="textcontenttitle">Our Mission</div></div>
+<div class="basicbox" id="animateboxtwo"><div id="textcontentone">Commitment to Excellence: <br>In everything we do, we strive to provide the best answer we can.<br> Excellence creates recognition, which precedes all great success</div></div>
+<div class="basicbox" id="animateboxthree"><div id="textcontentone">Sustainability:<br> Our strategies must be sustainable. When we create an app, or solve a problem making sure that the product or solution is reusable is critical. In each trial we face we must build a structure which can stand the test of challenges we are yet to face</div></div>
+<div class="basicbox" id="animateboxfour"><div id="textcontentone">Client satisfaction:<br> More than anything it is our clients trust we must preserve.<br> It is our client’s satisfaction that allows us to create solutions<br> and move to greater heights</div></div>
+<div class="basicbox" id="animateboxfive"><div id="textcontentone">Modern Solutions:<br> Iron Pixie Technologies distinguishes itself by striving to answer problems in a modern and efficient way whenever possible.<br> It is modern solutions at a low cost which is Iron Pixie Technologies’ greatest strength</div></div>
+
+</div>
+<div id="toteam"><div class="basicbox" id="animateboxastitle"><div id="textcontenttitle">Our Team</div></div>
+<div class="basicbox" id="animateboxtwo"><div id="textcontentone"><img src="assets\images\StephenImage.JPG" id="profileimage">
+  Stephen Harb - Chief Exectutive Officer, <br>
+  "I studied software engineering at Louisiana State University. There I was given the opportunity to work with LaSpace, a NASA affiliate. This introduced me to many of my life-long friends and buisness partners as well as built my foundation for professionalism. After I graduated school I cut my teeth consulting for enterprise level clients at CGI, where I still am a member. Now I work with local clients to provide cutting edge technical solutions so that they can stay competitive." </div></div>
+<div class="basicbox" id="animateboxthree"><div id="textcontentone"><img src="assets\images\AlexImage.jpg" id="profileimage">ALEX - Chief Technical Officer, <br> "I graduated with a software engineering degree from Louisiana State University. Since then I have spent two years contributing to large scale web platforms. I work to provide clients with an interface that works for them."</div></div>
+<div class="basicbox" id="animateboxthree"><div id="textcontentone"><img src="assets\images\ParkerImage.JPG" id="profileimage">PARKER - UX Specialist, <br> "I have a deep passion for web-design and was brought on to Iron Pixie to assist in User Experience development."</div></div>
+
+</div>
+<div id="tocontact"><div class="basicbox" id="animateboxastitle"><div id="textcontenttitle">Contact Us<br><br><div id="textcontentone">Number: (337) 207-2149 <br> Email: stephen.harb@ironpixietechnologies.com</div></div></div>
+
+
+
+</div>

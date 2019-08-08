@@ -1,0 +1,228 @@
+#desktopdropdown{
+    position: fixed;
+    border: none;
+    font-size: 62px;
+    top: 30%;
+    left: -30vh;
+    cursor: pointer;
+    background-color: rgb(35, 35, 110);
+    border-radius: 2px;
+    text-align: right;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+mat-icon{
+    font-size: inherit;
+    vertical-align: middle;
+    text-align: inherit;
+    padding-bottom: 50px;
+    padding-top: 12px;
+    padding-left: 30vh;
+    padding-right: 40px;
+    color: white;
+}
+#wrapper{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -10;
+    background-image: url("src\assets\images\ipt.png");
+}
+#menubar{
+    position: fixed;
+    width: 30vh;
+    height: 100%;
+    background-color: red;
+    top: 0px;
+    background-image: linear-gradient(to left, rgb(35, 35, 110), rgb(21, 21, 44), rgb(35, 35, 110) );
+}
+#textcontentone{
+    margin: 10px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px rgba(0, 8, 126, 0.295);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5vh;
+}
+#textcontenttitle{
+    margin: 10px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px rgba(0, 8, 126, 0.295);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7.5vh;
+}
+.notmenu{
+    animation-name: down;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+.ismenu{
+    animation-name: backup;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+#menucontainer{
+    position: fixed;
+    animation-fill-mode: forwards;
+    z-index: 21;
+    height: 0px;
+    width: 0px;
+    left: -30vh;
+    top: 30%;
+}
+img{
+    width: 100%;
+}
+#menuimage{
+    cursor: pointer;
+}
+#headimage{
+    width: 80%;
+    height: 20%;
+    max-width: 490px;
+
+
+    max-height: 213px;
+
+}
+#profileimage{
+    width: 50%;
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+ul{
+    display: block;
+    list-style-type: none;
+    height: 45px;
+
+    position: absolute;
+    top: 25vh;
+
+}
+li{
+    margin-top: 5vh;
+    height: 10vh;
+    width: 30vh;
+}
+.menubutton{
+    height: 7vh;
+    width: 100%;
+    background-image: linear-gradient(to left, rgb(35, 35, 110), rgb(21, 21, 44), rgb(35, 35, 110) );
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white; 
+    font-size: 2.7vh;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.menubutton:hover{
+    background-image: linear-gradient(to left, rgb(21, 21, 44), rgb(35, 35, 110), rgb(21, 21, 44));
+    animation-name: over;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    text-decoration: underline;
+
+}
+.basicbox{
+    max-width: 900px;
+    padding: 20px;
+    margin: 2%;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    background-color: rgb(247, 247, 247);
+    border-top: 4px solid rgb(22, 22, 139);
+    box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 0.788);
+    z-index: -1;
+    animation-name: fallin;
+    animation-iteration-count: 1;
+}
+#animateboxone{
+
+    animation-duration: 2s;
+}
+#animateboxtwo{
+
+    animation-duration: 3s;
+}
+#animateboxthree{
+
+    animation-duration: 4s;
+}
+#animateboxfour{
+
+    animation-duration: 5s;
+}
+#animateboxfive{
+
+    animation-duration: 6s;
+}
+#animateboxastitle{
+    animation-duration: 2s;
+    width: 100%;
+    text-align: center;
+    max-width: 90%;
+    margin-left: 1%;
+}
+#toteam{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 300vh;
+}
+#totop{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 0px;
+}
+#tomission{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 120vh;
+}
+#tocontact{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 700vh;
+}
+@keyframes down {
+    0%   {left: 0px;}
+    100% {left: -30vh;}
+}
+@keyframes backup {
+    0%   {left: -30vh;}
+    100% {left: 0px;}
+}
+@media (max-width: 868px) {
+
+}
+@keyframes over {
+    0%   {            background-image: linear-gradient(to left, rgb(35, 35, 110), rgb(21, 21, 44), rgb(35, 35, 110));}
+    10%   {     background-image: linear-gradient(to left, rgb(32, 32, 90), rgb(22, 22, 49), rgb(32, 32, 90));}
+    20%   {          background-image: linear-gradient(to left, rgb(30, 30, 89), rgb(23, 23, 54), rgb(30, 30, 89));}
+    30%   {          background-image: linear-gradient(to left, rgb(28, 28, 80), rgb(24, 24, 59), rgb(28, 28, 80));}
+    40%   {         background-image: linear-gradient(to left, rgb(27, 27, 75), rgb(25, 25, 64), rgb(27, 27, 75));}
+    50%   {     background-image: linear-gradient(to left, rgb(26, 26, 69), rgb(26, 26, 69), rgb(26, 26, 69));}
+    60%   {       background-image: linear-gradient(to left, rgb(25, 25, 64), rgb(27, 27, 75), rgb(25, 25, 64));}
+    70%   {       background-image: linear-gradient(to left, rgb(24, 24, 59), rgb(28, 28, 80), rgb(24, 24, 59));}
+    80%   {        background-image: linear-gradient(to left, rgb(23, 23, 54), rgb(30, 30, 89), rgb(23, 23, 54));}
+    90%   {    background-image: linear-gradient(to left, rgb(22, 22, 49), rgb(32, 32, 90), rgb(22, 22, 49));}
+    100% {      background-image: linear-gradient(to left, rgb(21, 21, 44), rgb(35, 35, 110), rgb(21, 21, 44));}
+  }
+  @keyframes fallin {
+    0%   {margin-top: 0px;
+        opacity: 0;
+    }
+    50%   {margin-top: 0px;
+        opacity: 0;
+    }
+    100% {margin-top: 2%;
+        opacity: 1;
+    }
+}
